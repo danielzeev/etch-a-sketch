@@ -1,0 +1,147 @@
+/* backup style */
+
+@font-face {
+    font-family: 'Etch-a-Sketch';
+    src: url('/fonts/EASTRIAL.ttf'),
+         url('/fonts/EASTRIAL.otf');
+  }
+
+input::-webkit-color-swatch {
+    border: none;
+}
+
+
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: 'Etch-a-Sketch', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;    
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 10px;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+
+/* Right side of page (main) */
+.grid-container {
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    padding: 1px;
+    /* width: 400px;
+    height: 400px; */
+}
+
+/* .row {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.square {
+    border: 0.1px solid gray;
+    aspect-ratio: 1/1;
+    flex: 1 1 auto;
+} */
+
+
+.grid-container {
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+
+.square {
+    border: 0.05px solid rgb(185, 181, 181);
+    aspect-ratio: 1/1; 
+    flex: 1 1 auto;
+}
+
+
+
+/* Left side of page */
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grow on hover */
+.grow { 
+    transition: all .1s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.05); 
+}
+
+
+.button {
+    height: 30px;
+    align-self: stretch;
+    width: 140px;
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.1);
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-family: 'Etch-a-Sketch', sans-serif;
+    font-weight: bold;
+}
+
+#range-input {
+    accent-color: rgb(93, 93, 93);
+}
+
+#range-output {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#color-button {
+    padding: 0;
+    border: solid;
+    background-color: black;
+}
+
+#rainbow-button:active,
+#clear-button:active {
+    background-color: rgb(47,47,47);
+    color: white;
+}
+
+#message {
+    font-size: 12px;
+    align-self: center;
+}
+
+
+

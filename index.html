@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+      <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>        
+        <div class="controls-container">
+            <input class="button grow"  id="color-button" type="color" value="black">
+            <button class="button grow" id="rainbow-button">Rainbow</button>
+            <button class="button grow" id="clear-button">Clear</button>
+            <div class="grid-range-container">
+                <p id="range-output">16 x 16</p>
+                <input type="range" min="4" max="64" value="16" class="slider grow" id="range-input">
+            </div>     
+            <p id="message">Click on a square to erase</p>       
+        </div>
+        <div class="grid-container"></div>
+    </main>
+    <footer>Etch-a-sketch font credit: https://www.joebobgraphics.com/</footer>
+</body>
+</html>
